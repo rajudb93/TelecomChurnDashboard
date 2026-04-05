@@ -1,0 +1,727 @@
+[
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "importPath": "src.snowflake.loader",
+        "description": "src.snowflake.loader",
+        "isExtraImport": true,
+        "detail": "src.snowflake.loader",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "importPath": "src.snowflake.loader",
+        "description": "src.snowflake.loader",
+        "isExtraImport": true,
+        "detail": "src.snowflake.loader",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.graph_objects",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.graph_objects",
+        "description": "plotly.graph_objects",
+        "detail": "plotly.graph_objects",
+        "documentation": {}
+    },
+    {
+        "label": "predict_churn",
+        "importPath": "src.models.predict",
+        "description": "src.models.predict",
+        "isExtraImport": true,
+        "detail": "src.models.predict",
+        "documentation": {}
+    },
+    {
+        "label": "recommend_action",
+        "importPath": "src.business.recommend",
+        "description": "src.business.recommend",
+        "isExtraImport": true,
+        "detail": "src.business.recommend",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "importPath": "src.business.email_sender",
+        "description": "src.business.email_sender",
+        "isExtraImport": true,
+        "detail": "src.business.email_sender",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "shap",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shap",
+        "description": "shap",
+        "detail": "shap",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEMultipart",
+        "importPath": "email.mime.multipart",
+        "description": "email.mime.multipart",
+        "isExtraImport": true,
+        "detail": "email.mime.multipart",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "roc_auc_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "XGBClassifier",
+        "importPath": "xgboost",
+        "description": "xgboost",
+        "isExtraImport": true,
+        "detail": "xgboost",
+        "documentation": {}
+    },
+    {
+        "label": "snowflake.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "snowflake.connector",
+        "description": "snowflake.connector",
+        "detail": "snowflake.connector",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "df = load_data()\nst.title(\"📊 Telecom Customer Churn Dashboard\")\n# ================= KPI =================\ncol1, col2, col3, col4 = st.columns(4)\ncol1.metric(\"Customers\", len(df))\ncol2.metric(\"Churn Rate\", f\"{df['ChurnValue'].mean()*100:.2f}%\")\ncol3.metric(\"Avg Monthly Charges\", f\"{df['MonthlyCharges'].mean():.2f}\")\ncol4.metric(\"Avg CLTV\", f\"{df['CLTV'].mean():.0f}\")\nst.divider()\n# ================= GEO MAP (FIXED) =================",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "geo_df",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "geo_df = df.copy()\n# Split LatLong column\ngeo_split = geo_df['LatLong'].astype(str).str.replace(\" \", \"\").str.split(\",\", expand=True)\ngeo_df[\"Latitude\"] = pd.to_numeric(geo_split[0], errors=\"coerce\")\ngeo_df[\"Longitude\"] = pd.to_numeric(geo_split[1], errors=\"coerce\")\n# Clean data\ngeo_df = geo_df.dropna(subset=[\"Latitude\", \"Longitude\"])\ngeo_df = geo_df[\n    (geo_df[\"Latitude\"].between(-90, 90)) &\n    (geo_df[\"Longitude\"].between(-180, 180))",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "geo_split",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "geo_split = geo_df['LatLong'].astype(str).str.replace(\" \", \"\").str.split(\",\", expand=True)\ngeo_df[\"Latitude\"] = pd.to_numeric(geo_split[0], errors=\"coerce\")\ngeo_df[\"Longitude\"] = pd.to_numeric(geo_split[1], errors=\"coerce\")\n# Clean data\ngeo_df = geo_df.dropna(subset=[\"Latitude\", \"Longitude\"])\ngeo_df = geo_df[\n    (geo_df[\"Latitude\"].between(-90, 90)) &\n    (geo_df[\"Longitude\"].between(-180, 180))\n]\nst.caption(f\"Valid geo points: {len(geo_df)}\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "geo_df[\"Latitude\"]",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "geo_df[\"Latitude\"] = pd.to_numeric(geo_split[0], errors=\"coerce\")\ngeo_df[\"Longitude\"] = pd.to_numeric(geo_split[1], errors=\"coerce\")\n# Clean data\ngeo_df = geo_df.dropna(subset=[\"Latitude\", \"Longitude\"])\ngeo_df = geo_df[\n    (geo_df[\"Latitude\"].between(-90, 90)) &\n    (geo_df[\"Longitude\"].between(-180, 180))\n]\nst.caption(f\"Valid geo points: {len(geo_df)}\")\n# Map (stable version)",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "geo_df[\"Longitude\"]",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "geo_df[\"Longitude\"] = pd.to_numeric(geo_split[1], errors=\"coerce\")\n# Clean data\ngeo_df = geo_df.dropna(subset=[\"Latitude\", \"Longitude\"])\ngeo_df = geo_df[\n    (geo_df[\"Latitude\"].between(-90, 90)) &\n    (geo_df[\"Longitude\"].between(-180, 180))\n]\nst.caption(f\"Valid geo points: {len(geo_df)}\")\n# Map (stable version)\nfig_geo = px.scatter_geo(",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "geo_df",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "geo_df = geo_df.dropna(subset=[\"Latitude\", \"Longitude\"])\ngeo_df = geo_df[\n    (geo_df[\"Latitude\"].between(-90, 90)) &\n    (geo_df[\"Longitude\"].between(-180, 180))\n]\nst.caption(f\"Valid geo points: {len(geo_df)}\")\n# Map (stable version)\nfig_geo = px.scatter_geo(\n    geo_df,\n    lat=\"Latitude\",",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "geo_df",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "geo_df = geo_df[\n    (geo_df[\"Latitude\"].between(-90, 90)) &\n    (geo_df[\"Longitude\"].between(-180, 180))\n]\nst.caption(f\"Valid geo points: {len(geo_df)}\")\n# Map (stable version)\nfig_geo = px.scatter_geo(\n    geo_df,\n    lat=\"Latitude\",\n    lon=\"Longitude\",",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_geo",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_geo = px.scatter_geo(\n    geo_df,\n    lat=\"Latitude\",\n    lon=\"Longitude\",\n    color=\"ChurnValue\",\n    size=\"MonthlyCharges\",\n    hover_name=\"City\",\n    hover_data=[\"State\", \"Contract\", \"ChurnLabel\"]\n)\nfig_geo.update_geos(",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "cat_cols",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "cat_cols = [\n    'Gender', 'SeniorCitizen', 'Partner', 'Dependents',\n    'PhoneService', 'MultipleLines', 'InternetService',\n    'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',\n    'TechSupport', 'StreamingTV', 'StreamingMovies',\n    'Contract', 'PaperlessBilling', 'PaymentMethod'\n]\nselected_cat = st.selectbox(\"Select Feature\", cat_cols)\nfig_cat = px.histogram(df, x=selected_cat, color=\"ChurnLabel\")\nst.plotly_chart(fig_cat, width='stretch', key=\"cat_plot\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "selected_cat",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "selected_cat = st.selectbox(\"Select Feature\", cat_cols)\nfig_cat = px.histogram(df, x=selected_cat, color=\"ChurnLabel\")\nst.plotly_chart(fig_cat, width='stretch', key=\"cat_plot\")\n# ================= NUMERICAL =================\nst.subheader(\"📈 Numerical Analysis\")\nnum_cols = [\n    \"TenureMonths\", \"MonthlyCharges\", \"TotalCharges\",\n    \"CLTV\", \"ChurnScore\"\n]\nselected_num = st.selectbox(\"Select Numerical Feature\", num_cols)",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_cat",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_cat = px.histogram(df, x=selected_cat, color=\"ChurnLabel\")\nst.plotly_chart(fig_cat, width='stretch', key=\"cat_plot\")\n# ================= NUMERICAL =================\nst.subheader(\"📈 Numerical Analysis\")\nnum_cols = [\n    \"TenureMonths\", \"MonthlyCharges\", \"TotalCharges\",\n    \"CLTV\", \"ChurnScore\"\n]\nselected_num = st.selectbox(\"Select Numerical Feature\", num_cols)\nfig_num = px.box(df, x=\"ChurnLabel\", y=selected_num)",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "num_cols",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "num_cols = [\n    \"TenureMonths\", \"MonthlyCharges\", \"TotalCharges\",\n    \"CLTV\", \"ChurnScore\"\n]\nselected_num = st.selectbox(\"Select Numerical Feature\", num_cols)\nfig_num = px.box(df, x=\"ChurnLabel\", y=selected_num)\nst.plotly_chart(fig_num, width='stretch', key=\"num_plot\")\n# ================= CONTRACT =================\nst.subheader(\"📄 Contract Impact\")\nfig_contract = px.histogram(df, x=\"Contract\", color=\"ChurnLabel\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "selected_num",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "selected_num = st.selectbox(\"Select Numerical Feature\", num_cols)\nfig_num = px.box(df, x=\"ChurnLabel\", y=selected_num)\nst.plotly_chart(fig_num, width='stretch', key=\"num_plot\")\n# ================= CONTRACT =================\nst.subheader(\"📄 Contract Impact\")\nfig_contract = px.histogram(df, x=\"Contract\", color=\"ChurnLabel\")\nst.plotly_chart(fig_contract, width='stretch', key=\"contract_plot\")\n# ================= PAYMENT =================\nst.subheader(\"💳 Payment Behavior\")\nfig_payment = px.histogram(df, x=\"PaymentMethod\", color=\"ChurnLabel\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_num",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_num = px.box(df, x=\"ChurnLabel\", y=selected_num)\nst.plotly_chart(fig_num, width='stretch', key=\"num_plot\")\n# ================= CONTRACT =================\nst.subheader(\"📄 Contract Impact\")\nfig_contract = px.histogram(df, x=\"Contract\", color=\"ChurnLabel\")\nst.plotly_chart(fig_contract, width='stretch', key=\"contract_plot\")\n# ================= PAYMENT =================\nst.subheader(\"💳 Payment Behavior\")\nfig_payment = px.histogram(df, x=\"PaymentMethod\", color=\"ChurnLabel\")\nst.plotly_chart(fig_payment, width='stretch', key=\"payment_plot\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_contract",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_contract = px.histogram(df, x=\"Contract\", color=\"ChurnLabel\")\nst.plotly_chart(fig_contract, width='stretch', key=\"contract_plot\")\n# ================= PAYMENT =================\nst.subheader(\"💳 Payment Behavior\")\nfig_payment = px.histogram(df, x=\"PaymentMethod\", color=\"ChurnLabel\")\nst.plotly_chart(fig_payment, width='stretch', key=\"payment_plot\")\n# ================= TENURE =================\nst.subheader(\"⏳ Tenure Analysis\")\ndf['TenureGroup'] = pd.cut(df['TenureMonths'], bins=5).astype(str)\ntenure_df = df.groupby('TenureGroup', observed=False)['ChurnValue'].mean().reset_index()",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_payment",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_payment = px.histogram(df, x=\"PaymentMethod\", color=\"ChurnLabel\")\nst.plotly_chart(fig_payment, width='stretch', key=\"payment_plot\")\n# ================= TENURE =================\nst.subheader(\"⏳ Tenure Analysis\")\ndf['TenureGroup'] = pd.cut(df['TenureMonths'], bins=5).astype(str)\ntenure_df = df.groupby('TenureGroup', observed=False)['ChurnValue'].mean().reset_index()\nfig_tenure = px.bar(\n    tenure_df,\n    x=\"TenureGroup\",\n    y=\"ChurnValue\",",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "df['TenureGroup']",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "df['TenureGroup'] = pd.cut(df['TenureMonths'], bins=5).astype(str)\ntenure_df = df.groupby('TenureGroup', observed=False)['ChurnValue'].mean().reset_index()\nfig_tenure = px.bar(\n    tenure_df,\n    x=\"TenureGroup\",\n    y=\"ChurnValue\",\n    title=\"Churn Rate by Tenure Group\"\n)\nst.plotly_chart(fig_tenure, width='stretch', key=\"tenure_plot\")\n# ================= SERVICES =================",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "tenure_df",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "tenure_df = df.groupby('TenureGroup', observed=False)['ChurnValue'].mean().reset_index()\nfig_tenure = px.bar(\n    tenure_df,\n    x=\"TenureGroup\",\n    y=\"ChurnValue\",\n    title=\"Churn Rate by Tenure Group\"\n)\nst.plotly_chart(fig_tenure, width='stretch', key=\"tenure_plot\")\n# ================= SERVICES =================\nst.subheader(\"📡 Services Impact\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_tenure",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_tenure = px.bar(\n    tenure_df,\n    x=\"TenureGroup\",\n    y=\"ChurnValue\",\n    title=\"Churn Rate by Tenure Group\"\n)\nst.plotly_chart(fig_tenure, width='stretch', key=\"tenure_plot\")\n# ================= SERVICES =================\nst.subheader(\"📡 Services Impact\")\nservice_cols = [",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "service_cols",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "service_cols = [\n    \"OnlineSecurity\", \"OnlineBackup\",\n    \"DeviceProtection\", \"TechSupport\",\n    \"StreamingTV\", \"StreamingMovies\"\n]\nselected_service = st.selectbox(\"Select Service\", service_cols)\nfig_service = px.histogram(df, x=selected_service, color=\"ChurnLabel\")\nst.plotly_chart(fig_service, width='stretch', key=\"service_plot\")\n# ================= CHURN REASON =================\nst.subheader(\"❗ Churn Reasons\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "selected_service",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "selected_service = st.selectbox(\"Select Service\", service_cols)\nfig_service = px.histogram(df, x=selected_service, color=\"ChurnLabel\")\nst.plotly_chart(fig_service, width='stretch', key=\"service_plot\")\n# ================= CHURN REASON =================\nst.subheader(\"❗ Churn Reasons\")\nreason_df = df[df['ChurnLabel'] == \"Yes\"]\nfig_reason = px.histogram(reason_df, x=\"ChurnReason\")\nst.plotly_chart(fig_reason, width='stretch', key=\"reason_plot\")\nst.divider()\nst.header(\"📊 Advanced Data Insights\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_service",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_service = px.histogram(df, x=selected_service, color=\"ChurnLabel\")\nst.plotly_chart(fig_service, width='stretch', key=\"service_plot\")\n# ================= CHURN REASON =================\nst.subheader(\"❗ Churn Reasons\")\nreason_df = df[df['ChurnLabel'] == \"Yes\"]\nfig_reason = px.histogram(reason_df, x=\"ChurnReason\")\nst.plotly_chart(fig_reason, width='stretch', key=\"reason_plot\")\nst.divider()\nst.header(\"📊 Advanced Data Insights\")\n# ================= NUMERIC COLUMNS =================",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "reason_df",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "reason_df = df[df['ChurnLabel'] == \"Yes\"]\nfig_reason = px.histogram(reason_df, x=\"ChurnReason\")\nst.plotly_chart(fig_reason, width='stretch', key=\"reason_plot\")\nst.divider()\nst.header(\"📊 Advanced Data Insights\")\n# ================= NUMERIC COLUMNS =================\nnum_cols = df.select_dtypes(include=['int64', 'float64']).columns.tolist()\n# Remove target leakage columns if needed\nexclude_cols = [\"ChurnValue\"]\nnum_cols = [col for col in num_cols if col not in exclude_cols]",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_reason",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_reason = px.histogram(reason_df, x=\"ChurnReason\")\nst.plotly_chart(fig_reason, width='stretch', key=\"reason_plot\")\nst.divider()\nst.header(\"📊 Advanced Data Insights\")\n# ================= NUMERIC COLUMNS =================\nnum_cols = df.select_dtypes(include=['int64', 'float64']).columns.tolist()\n# Remove target leakage columns if needed\nexclude_cols = [\"ChurnValue\"]\nnum_cols = [col for col in num_cols if col not in exclude_cols]\n# ================= 1. HISTOGRAM =================",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "num_cols",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "num_cols = df.select_dtypes(include=['int64', 'float64']).columns.tolist()\n# Remove target leakage columns if needed\nexclude_cols = [\"ChurnValue\"]\nnum_cols = [col for col in num_cols if col not in exclude_cols]\n# ================= 1. HISTOGRAM =================\nst.subheader(\"📈 Distribution Analysis\")\ncol1, col2 = st.columns(2)\nwith col1:\n    hist_col = st.selectbox(\"Select column (Histogram)\", num_cols, key=\"hist\")\n    fig_hist = px.histogram(",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "exclude_cols",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "exclude_cols = [\"ChurnValue\"]\nnum_cols = [col for col in num_cols if col not in exclude_cols]\n# ================= 1. HISTOGRAM =================\nst.subheader(\"📈 Distribution Analysis\")\ncol1, col2 = st.columns(2)\nwith col1:\n    hist_col = st.selectbox(\"Select column (Histogram)\", num_cols, key=\"hist\")\n    fig_hist = px.histogram(\n        df,\n        x=hist_col,",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "num_cols",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "num_cols = [col for col in num_cols if col not in exclude_cols]\n# ================= 1. HISTOGRAM =================\nst.subheader(\"📈 Distribution Analysis\")\ncol1, col2 = st.columns(2)\nwith col1:\n    hist_col = st.selectbox(\"Select column (Histogram)\", num_cols, key=\"hist\")\n    fig_hist = px.histogram(\n        df,\n        x=hist_col,\n        marginal=\"box\",",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "corr",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "corr = df[num_cols].corr()\nfig_corr = px.imshow(\n    corr,\n    text_auto=True,\n    aspect=\"auto\",\n    title=\"Feature Correlation Matrix\"\n)\nst.plotly_chart(fig_corr, width='stretch', key=\"corr_plot\")\n# ================= 4. VIOLIN PLOT =================\nst.subheader(\"🎻 Distribution Comparison\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_corr",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_corr = px.imshow(\n    corr,\n    text_auto=True,\n    aspect=\"auto\",\n    title=\"Feature Correlation Matrix\"\n)\nst.plotly_chart(fig_corr, width='stretch', key=\"corr_plot\")\n# ================= 4. VIOLIN PLOT =================\nst.subheader(\"🎻 Distribution Comparison\")\nviolin_col = st.selectbox(\"Select column (Violin)\", num_cols, key=\"violin\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "violin_col",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "violin_col = st.selectbox(\"Select column (Violin)\", num_cols, key=\"violin\")\nfig_violin = px.violin(\n    df,\n    y=violin_col,\n    x=\"ChurnLabel\",\n    box=True,\n    points=\"all\"\n)\nst.plotly_chart(fig_violin, width='stretch', key=\"violin_plot\")\n# ================= 5. PAIR PLOT (SCATTER MATRIX) =================",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_violin",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_violin = px.violin(\n    df,\n    y=violin_col,\n    x=\"ChurnLabel\",\n    box=True,\n    points=\"all\"\n)\nst.plotly_chart(fig_violin, width='stretch', key=\"violin_plot\")\n# ================= 5. PAIR PLOT (SCATTER MATRIX) =================\nst.subheader(\"🧠 Multi-variable Analysis\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "selected_features",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "selected_features = st.multiselect(\n    \"Select features for scatter matrix\",\n    num_cols,\n    default=num_cols[:4]\n)\nif len(selected_features) >= 2:\n    fig_matrix = px.scatter_matrix(\n        df,\n        dimensions=selected_features,\n        color=\"ChurnLabel\"",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "strip_col",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "strip_col = st.selectbox(\"Select column (Strip)\", num_cols, key=\"strip\")\nfig_strip = px.strip(\n    df,\n    x=\"ChurnLabel\",\n    y=strip_col,\n    color=\"ChurnLabel\"\n)\nst.plotly_chart(fig_strip, width='stretch', key=\"strip_plot\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "fig_strip",
+        "kind": 5,
+        "importPath": "pages.1_Dashboard",
+        "description": "pages.1_Dashboard",
+        "peekOfCode": "fig_strip = px.strip(\n    df,\n    x=\"ChurnLabel\",\n    y=strip_col,\n    color=\"ChurnLabel\"\n)\nst.plotly_chart(fig_strip, width='stretch', key=\"strip_plot\")",
+        "detail": "pages.1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "customer_name",
+        "kind": 5,
+        "importPath": "pages.2_Prediction",
+        "description": "pages.2_Prediction",
+        "peekOfCode": "customer_name = st.text_input(\"Enter name of customer\", key=\"customer_name\")\nuser_email = st.text_input(\"Enter customer email\", key=\"user_email\")\n# buttons update session state instead of performing actions directly\nif st.button(\"Predict Churn\", key=\"predict_btn\"):\n    st.session_state.predict_clicked = True\n    st.session_state.email_response = None  # clear previous email response\n# perform prediction when flag is set\nif st.session_state.predict_clicked:\n    input_data = {\n        \"TenureMonths\": tenure,",
+        "detail": "pages.2_Prediction",
+        "documentation": {}
+    },
+    {
+        "label": "user_email",
+        "kind": 5,
+        "importPath": "pages.2_Prediction",
+        "description": "pages.2_Prediction",
+        "peekOfCode": "user_email = st.text_input(\"Enter customer email\", key=\"user_email\")\n# buttons update session state instead of performing actions directly\nif st.button(\"Predict Churn\", key=\"predict_btn\"):\n    st.session_state.predict_clicked = True\n    st.session_state.email_response = None  # clear previous email response\n# perform prediction when flag is set\nif st.session_state.predict_clicked:\n    input_data = {\n        \"TenureMonths\": tenure,\n        \"MonthlyCharges\": monthly,",
+        "detail": "pages.2_Prediction",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pages.Advance_Viz",
+        "description": "pages.Advance_Viz",
+        "peekOfCode": "df = load_data()\nst.set_page_config(layout=\"wide\")\nst.title(\"📊 Telecom Churn Intelligence Platform\")\n# ================= TABS =================\ntabs = st.tabs([\n    \"📊 Overview\",\n    \"🌍 Geo\",\n    \"📈 Features\",\n    \"💳 Business\",\n    \"📊 Advanced\",",
+        "detail": "pages.Advance_Viz",
+        "documentation": {}
+    },
+    {
+        "label": "tabs",
+        "kind": 5,
+        "importPath": "pages.Advance_Viz",
+        "description": "pages.Advance_Viz",
+        "peekOfCode": "tabs = st.tabs([\n    \"📊 Overview\",\n    \"🌍 Geo\",\n    \"📈 Features\",\n    \"💳 Business\",\n    \"📊 Advanced\",\n    \"🧠 Relationships\",\n    \"🔥 Correlation\",\n    \"🤖 Explainability\",\n    \"📊 Segmentation\",",
+        "detail": "pages.Advance_Viz",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "kind": 2,
+        "importPath": "src.business.email_sender",
+        "description": "src.business.email_sender",
+        "peekOfCode": "def send_email(to_email, subject, message):\n    # ================= CONFIG =================\n    SMTP_SERVER = \"smtp.gmail.com\"\n    SMTP_PORT = 587\n    EMAIL_USER = st.secrets[\"EMAIL_USER\"]\n    EMAIL_PASSWORD = st.secrets[\"EMAIL_PASSWORD\"]\n    try:\n        # ================= SETUP MESSAGE =================\n        msg = MIMEMultipart()\n        msg[\"From\"] = EMAIL_USER",
+        "detail": "src.business.email_sender",
+        "documentation": {}
+    },
+    {
+        "label": "recommend_action",
+        "kind": 2,
+        "importPath": "src.business.recommend",
+        "description": "src.business.recommend",
+        "peekOfCode": "def recommend_action(prob, customer_name=\"Customer\"):\n    if prob > 0.7:\n        subject = \"We Value You – Exclusive Offer Just for You\"\n        message = f\"\"\"\nDear {customer_name},\nWe noticed that your recent experience may not have been up to the mark, and we truly value your relationship with us.\nTo ensure you continue enjoying our services, we’re offering you an exclusive discount along with priority customer support assistance.\nOur team is ready to help you resolve any issues and enhance your experience.\n👉 Special Benefits for You:\n- Personalized support",
+        "detail": "src.business.recommend",
+        "documentation": {}
+    },
+    {
+        "label": "predict_churn",
+        "kind": 2,
+        "importPath": "src.models.predict",
+        "description": "src.models.predict",
+        "peekOfCode": "def predict_churn(input_dict):\n    df = pd.DataFrame([input_dict])\n    df = pd.get_dummies(df)\n    df = df.reindex(columns=FEATURE_COLUMNS, fill_value=0)\n    df_scaled = scaler.transform(df)\n    prob = model.predict_proba(df_scaled)[0][1]\n    return prob",
+        "detail": "src.models.predict",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "src.models.predict",
+        "description": "src.models.predict",
+        "peekOfCode": "model = joblib.load(\"models/churn_model.pkl\")\nscaler = joblib.load(\"models/scaler.pkl\")\nFEATURE_COLUMNS = joblib.load(\"models/feature_columns.pkl\")\ndef predict_churn(input_dict):\n    df = pd.DataFrame([input_dict])\n    df = pd.get_dummies(df)\n    df = df.reindex(columns=FEATURE_COLUMNS, fill_value=0)\n    df_scaled = scaler.transform(df)\n    prob = model.predict_proba(df_scaled)[0][1]\n    return prob",
+        "detail": "src.models.predict",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "src.models.predict",
+        "description": "src.models.predict",
+        "peekOfCode": "scaler = joblib.load(\"models/scaler.pkl\")\nFEATURE_COLUMNS = joblib.load(\"models/feature_columns.pkl\")\ndef predict_churn(input_dict):\n    df = pd.DataFrame([input_dict])\n    df = pd.get_dummies(df)\n    df = df.reindex(columns=FEATURE_COLUMNS, fill_value=0)\n    df_scaled = scaler.transform(df)\n    prob = model.predict_proba(df_scaled)[0][1]\n    return prob",
+        "detail": "src.models.predict",
+        "documentation": {}
+    },
+    {
+        "label": "FEATURE_COLUMNS",
+        "kind": 5,
+        "importPath": "src.models.predict",
+        "description": "src.models.predict",
+        "peekOfCode": "FEATURE_COLUMNS = joblib.load(\"models/feature_columns.pkl\")\ndef predict_churn(input_dict):\n    df = pd.DataFrame([input_dict])\n    df = pd.get_dummies(df)\n    df = df.reindex(columns=FEATURE_COLUMNS, fill_value=0)\n    df_scaled = scaler.transform(df)\n    prob = model.predict_proba(df_scaled)[0][1]\n    return prob",
+        "detail": "src.models.predict",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "df = pd.read_csv(\"data/customer_churn.csv\")\ndf.columns = df.columns.str.strip()\ndf['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')\ndf.fillna(0, inplace=True)\ndf['ChurnLabel'] = df['ChurnLabel'].map({'Yes': 1, 'No': 0})\nFEATURES = [\n    \"TenureMonths\",\n    \"MonthlyCharges\",\n    \"TotalCharges\",\n    \"Contract\",",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "df.columns",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "df.columns = df.columns.str.strip()\ndf['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')\ndf.fillna(0, inplace=True)\ndf['ChurnLabel'] = df['ChurnLabel'].map({'Yes': 1, 'No': 0})\nFEATURES = [\n    \"TenureMonths\",\n    \"MonthlyCharges\",\n    \"TotalCharges\",\n    \"Contract\",\n    \"InternetService\",",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "df['TotalCharges']",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')\ndf.fillna(0, inplace=True)\ndf['ChurnLabel'] = df['ChurnLabel'].map({'Yes': 1, 'No': 0})\nFEATURES = [\n    \"TenureMonths\",\n    \"MonthlyCharges\",\n    \"TotalCharges\",\n    \"Contract\",\n    \"InternetService\",\n    \"PaymentMethod\",",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "df['ChurnLabel']",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "df['ChurnLabel'] = df['ChurnLabel'].map({'Yes': 1, 'No': 0})\nFEATURES = [\n    \"TenureMonths\",\n    \"MonthlyCharges\",\n    \"TotalCharges\",\n    \"Contract\",\n    \"InternetService\",\n    \"PaymentMethod\",\n    \"TechSupport\"\n]",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "FEATURES",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "FEATURES = [\n    \"TenureMonths\",\n    \"MonthlyCharges\",\n    \"TotalCharges\",\n    \"Contract\",\n    \"InternetService\",\n    \"PaymentMethod\",\n    \"TechSupport\"\n]\ndf = df[FEATURES + [\"ChurnLabel\"]]",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "df = df[FEATURES + [\"ChurnLabel\"]]\ndf = pd.get_dummies(df, drop_first=True)\nX = df.drop(\"ChurnLabel\", axis=1)\ny = df[\"ChurnLabel\"]\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\nscaler = StandardScaler()\nX_train_scaled = scaler.fit_transform(X_train)\nX_test_scaled = scaler.transform(X_test)",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "df = pd.get_dummies(df, drop_first=True)\nX = df.drop(\"ChurnLabel\", axis=1)\ny = df[\"ChurnLabel\"]\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\nscaler = StandardScaler()\nX_train_scaled = scaler.fit_transform(X_train)\nX_test_scaled = scaler.transform(X_test)\nmodel = XGBClassifier(",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "X = df.drop(\"ChurnLabel\", axis=1)\ny = df[\"ChurnLabel\"]\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\nscaler = StandardScaler()\nX_train_scaled = scaler.fit_transform(X_train)\nX_test_scaled = scaler.transform(X_test)\nmodel = XGBClassifier(\n    n_estimators=200,",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "y = df[\"ChurnLabel\"]\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\nscaler = StandardScaler()\nX_train_scaled = scaler.fit_transform(X_train)\nX_test_scaled = scaler.transform(X_test)\nmodel = XGBClassifier(\n    n_estimators=200,\n    max_depth=5,",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "scaler = StandardScaler()\nX_train_scaled = scaler.fit_transform(X_train)\nX_test_scaled = scaler.transform(X_test)\nmodel = XGBClassifier(\n    n_estimators=200,\n    max_depth=5,\n    learning_rate=0.05,\n    scale_pos_weight=3,\n    random_state=42\n)",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "X_train_scaled",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "X_train_scaled = scaler.fit_transform(X_train)\nX_test_scaled = scaler.transform(X_test)\nmodel = XGBClassifier(\n    n_estimators=200,\n    max_depth=5,\n    learning_rate=0.05,\n    scale_pos_weight=3,\n    random_state=42\n)\nmodel.fit(X_train_scaled, y_train)",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "X_test_scaled",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "X_test_scaled = scaler.transform(X_test)\nmodel = XGBClassifier(\n    n_estimators=200,\n    max_depth=5,\n    learning_rate=0.05,\n    scale_pos_weight=3,\n    random_state=42\n)\nmodel.fit(X_train_scaled, y_train)\npreds = model.predict(X_test_scaled)",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "model = XGBClassifier(\n    n_estimators=200,\n    max_depth=5,\n    learning_rate=0.05,\n    scale_pos_weight=3,\n    random_state=42\n)\nmodel.fit(X_train_scaled, y_train)\npreds = model.predict(X_test_scaled)\nprint(classification_report(y_test, preds))",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "preds",
+        "kind": 5,
+        "importPath": "src.models.train",
+        "description": "src.models.train",
+        "peekOfCode": "preds = model.predict(X_test_scaled)\nprint(classification_report(y_test, preds))\nprint(\"ROC AUC:\", roc_auc_score(y_test, preds))\njoblib.dump(model, \"models/churn_model.pkl\")\njoblib.dump(scaler, \"models/scaler.pkl\")\njoblib.dump(X.columns.tolist(), \"models/feature_columns.pkl\")\nprint(\"✅ Model trained & saved\")",
+        "detail": "src.models.train",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "kind": 2,
+        "importPath": "src.snowflake.connection",
+        "description": "src.snowflake.connection",
+        "peekOfCode": "def get_connection():\n    return snowflake.connector.connect(\n        user=st.secrets(\"user\"),\n        password=st.secrets(\"password\"),\n        account=st.secrets(\"account\"),\n        warehouse=st.secrets(\"warehouse\"),\n        database=st.secrets(\"database\"),\n        schema=st.secrets(\"schema\"), \n        role = st.secrets(\"role\")\n    )",
+        "detail": "src.snowflake.connection",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "kind": 2,
+        "importPath": "src.snowflake.loader",
+        "description": "src.snowflake.loader",
+        "peekOfCode": "def load_data():\n    try:\n        conn = get_connection()\n        df = pd.read_sql(\"SELECT * FROM CUSTOMER_CHURN\", conn)\n    except:\n        df = pd.read_csv(\"data/customer_churn.csv\")\n    return df",
+        "detail": "src.snowflake.loader",
+        "documentation": {}
+    }
+]
